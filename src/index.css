@@ -3,7 +3,9 @@
 @import 'tailwindcss/utilities';
 
 body {
+  @apply font-roboto text-gray-900 bg-gray-100;
+}
 
-  @apply font-roboto;
-  @apply text-gray-200;
+.dark body {
+  @apply text-gray-200 bg-gray-900;
 }

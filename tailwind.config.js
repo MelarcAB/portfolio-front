@@ -4,7 +4,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        'roboto': ['Roboto', 'sans-serif']
+        'roboto': ['Roboto', 'sans-serif'],
+        'inter': ['Inter', 'sans-serif']
       },
       // Si quieres extender los colores para el modo oscuro
       backgroundColor: {
