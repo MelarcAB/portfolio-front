@@ -5,5 +5,5 @@
 body {
 
   @apply font-roboto;
-  @apply bg-gray-900 text-gray-200;
+  @apply text-gray-200;
 }

@@ -1,11 +1,13 @@
 import { useState } from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import 'typeface-roboto'
-
 import Home from './views/Home'
 import './App.css'
-const BACKEND_URL = import.meta.env.VITE_BACKEND_URL;
+import './index.scss'
 
+
+
+const BACKEND_URL = import.meta.env.VITE_BACKEND_URL;
 
 function AppContent() {
   return (
@@ -22,6 +24,7 @@ function AppContent() {
 function App() {
   return (
     <AppContent />
+
   )
 
 }

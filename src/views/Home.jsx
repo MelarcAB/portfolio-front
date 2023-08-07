@@ -22,6 +22,7 @@ function Home() {
 
     return (
         <div className="container mx-auto px-4">
+
             <Header portfolio={portfolio} />
             <AboutMe portfolio={portfolio} />
             <ProjectsSection projects={projects} />
