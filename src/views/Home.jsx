@@ -4,6 +4,7 @@ import AboutMe from "../components/AboutMe";
 import ProjectsSection from "../components/ProjectsSection";
 import React from "react";
 
+import Navbar from "../components/Navbar";
 
 
 function Home() {
@@ -27,7 +28,7 @@ function Home() {
         <div className="container mx-auto px-4">
 
             <Header portfolio={portfolio} />
-            <AboutMe portfolio={portfolio} />
+            <Navbar />
             <ProjectsSection projects={projects} />
         </div>
     );
