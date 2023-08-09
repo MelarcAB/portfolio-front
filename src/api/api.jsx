@@ -10,8 +10,15 @@ const getProjects = async () => {
 }
 
 const getPortfolio = async () => {
-    const response = await axios.get(`${BACKEND_URL}portfolio`)
-    return response.data
+    try{
+      const response = await axios.get(`${BACKEND_URL}portfolio`)
+        console.log(response)
+        return response.data
+    }catch(err){
+        console.log("Error en la llamada a la API")
+        console.log(err.response.data)
+    }
+  
 }
 
 export { getProjects, getPortfolio }

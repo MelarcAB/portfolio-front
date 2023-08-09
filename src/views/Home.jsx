@@ -10,6 +10,7 @@ function Home() {
     const [portfolio, setPortfolio] = React.useState(null);
     const [projects, setProjects] = React.useState([]);
 
+
     React.useEffect(() => {
         async function fetchData() {
             const portfolioData = await getPortfolio();
@@ -26,7 +27,6 @@ function Home() {
         <div className="container mx-auto px-4">
 
             <Header portfolio={portfolio} />
-
             <AboutMe portfolio={portfolio} />
             <ProjectsSection projects={projects} />
         </div>
