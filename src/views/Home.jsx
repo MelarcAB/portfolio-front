@@ -26,7 +26,6 @@ function Home() {
 
     return (
         <div className="container mx-auto px-4">
-
             <Header portfolio={portfolio} />
             <Navbar />
             <ProjectsSection projects={projects} />

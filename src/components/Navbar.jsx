@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 
 const NavElements = [
     {
-        name: 'Projects',
+        name: 'Proyectos',
         path: '/proyectos'
     },
     {
@@ -20,7 +20,7 @@ const NavElements = [
 function Navbar() {
 
     return (
-        <nav className="my-12">
+        <nav className="m-12 p-12">
             <ul className="flex justify-center space-x-10 text-xl md:text-2xl font-mono">
 
                 {NavElements.map((element, index) => (
