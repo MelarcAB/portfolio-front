@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 const NavElements = [
     {
         name: 'Proyectos',
-        path: '/proyectos'
+        path: '/'
     },
     {
         name: 'Experiencia',

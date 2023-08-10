@@ -9,3 +9,32 @@ body {
 .dark body {
   @apply text-gray-200 bg-gray-900;
 }
+
+
+/* Estilo del Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+  /* Añadimos transición al fondo */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #0077b6;
+  /* Un tono azulado */
+  border-radius: 5px;
+  transition: background 0.3s ease;
+  /* Transición para el pulgar del scrollbar */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #005792;
+  /* Un tono azul más oscuro cuando se pasa el cursor */
+}
+
+/* Estilos para Firefox */
+scrollbar-color: #0077b6 #f1f1f1;
