@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import 'typeface-roboto'
-import 'typeface-ibm-plex-mono';
 
 import Home from './views/Home'
 import './App.css'
