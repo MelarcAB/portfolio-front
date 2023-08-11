@@ -38,7 +38,7 @@ function CircleHeader({ portfolio }) {
                 transition={{ delay: 0.5, duration: 0.5 }}
                 className="text-xl text-indigo-500 dark:text-indigo-400 mb-4"
             >
-                {portfolio.job_title} en
+                {portfolio.job_title} en{' '}
                 <a href={portfolio.current_company_website} target="_blank" rel="noopener noreferrer" className="underline hover:text-indigo-600">
                     {portfolio.current_company}
                 </a>
