@@ -1,6 +1,34 @@
 import React from 'react';
+import { postContactForm } from '../api/api';
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
+/**
+ * componente para la vista de contacto
+ * to
+ */
 function Contact() {
+    const handleSubmit = async (event) => {
+        event.preventDefault();
+        const toastId = toast("Enviando...", { autoClose: false });
+
+        const data = {
+            name: event.target.name.value,
+            email: event.target.email.value,
+            message: event.target.message.value,
+        };
+
+        try {
+            const result = await postContactForm(data);
+            console.log('Mensaje enviado:', result);
+            toast.dismiss(toastId);
+            toast.success("Mensaje enviado, serás respondido al email " + data.email);
+
+        } catch (error) {
+            toast.dismiss(toastId);
+            toast.error('Error al enviar el mensaje.');
+        }
+    };
     return (
         <div className="px-4 py-4 md:px-20 md:py-6 min-h-screen flex flex-col justify-start items-center">
 
@@ -10,7 +38,7 @@ function Contact() {
                     ¿Tienes un proyecto genial en mente? No dudes en contactarme.
                 </p>
 
-                <form action="#" method="POST">
+                <form onSubmit={handleSubmit}>
                     <div className="mb-4">
                         <label htmlFor="name" className="block text-sm font-medium mb-2 text-gray-600 dark:text-gray-400">
                             Nombre

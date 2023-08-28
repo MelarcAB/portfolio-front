@@ -12,6 +12,7 @@ import Navbar from './components/Navbar';
 import { getPortfolio } from './api/api';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import Contact from './views/Contact';
+import { ToastContainer } from 'react-toastify';
 
 
 
@@ -36,7 +37,10 @@ function AppContent() {
   }, []);
 
   return (
+
     <div className="relative min-h-screen">
+      <ToastContainer />
+
       <div className="absolute top-2 right-4 md:top-4 md:right-6 z-50">
         <Switcher />
       </div>
