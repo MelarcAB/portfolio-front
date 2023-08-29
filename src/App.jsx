@@ -13,6 +13,7 @@ import { getPortfolio } from './api/api';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import Contact from './views/Contact';
 import { ToastContainer } from 'react-toastify';
+import Experience from './views/Experience';
 
 
 
@@ -52,6 +53,7 @@ function AppContent() {
             <Routes location={location}>
               <Route path="/" element={<Home />} />
               <Route path="/contacto" element={<Contact />} />
+              <Route path="/experiencia" element={<Experience />} />
             </Routes>
           </CSSTransition>
         </TransitionGroup>
