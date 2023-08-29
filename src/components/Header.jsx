@@ -46,7 +46,7 @@ function CircleHeader({ portfolio }) {
 
             <p className="text-gray-600 dark:text-gray-300 mb-4">{portfolio.description}</p>
 
-            {/* GitHub and LinkedIn as Labels */}
+            {/* gitHub and linkedin as labels */}
             <div className="flex space-x-3 justify-center">
                 <motion.a
                     href={portfolio.git_url}

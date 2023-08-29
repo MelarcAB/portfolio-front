@@ -87,7 +87,6 @@ function ProjectCard({ project }) {
 function ProjectsSection({ projects }) {
     return (
         <section className="py-10 mt-10">
-            {/*... Header unchanged ...*/}
 
             <motion.div
                 className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-16 sm:gap-24 px-4 sm:px-0"
